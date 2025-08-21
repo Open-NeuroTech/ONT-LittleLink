@@ -77,7 +77,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   h1, h2 {
 	margin:0 0 0.5rem 0;
-	color:var(--primary-green);
+	color:var(--text-white);
 	font-size:3rem;         		/* 48px */
     font-weight:800;
 	line-height:1;
@@ -88,7 +88,7 @@
 }
 .container p {
 	margin:0 0 2rem 0;
-	color:var(--primary-green);
+	color:var(--text-light);
 
 }
 
@@ -96,8 +96,8 @@
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
     --primary-blue: #1e3a5f;
-    --primary-green: #4ade80;
-    --dark-blue: #0f172a;
+    --primary-green: #3EB489;
+    --dark-blue: #0A2342;
     --light-blue: #3b82f6;
     --accent-purple: #8b5cf6;
     --text-light: #f8fafc;
@@ -129,7 +129,7 @@
 /* Avatar */
 .avatar {
 	width: 8rem;             /* 128px */
-	height: 8rem;
+	height: auto;
 	border-radius: 50%;
 	object-fit: cover;
 	background-position: center;
@@ -243,11 +243,11 @@ b, strong {
 /* Avatar
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .avatar {
-	width: 8rem;             /* 128px */
-	height: 8rem;
-	object-fit: cover;
+	width: 100rem;             /* 128px */
+	height: auto;
+	object-fit: contain;
 	background-position: center;
-	margin-bottom: var(--spacing-l);
+	margin-bottom: 0;
   }
 
    /* Modifier for no avatar rounding */
@@ -271,7 +271,7 @@ b, strong {
 }
 @media (prefers-color-scheme:dark) {
 	:root.theme-auto body {
-	background-color:#121212;
+	background-color:var(--dark-blue);
 	color:#ffffff;
 }
 :root.theme-auto :focus-visible {
