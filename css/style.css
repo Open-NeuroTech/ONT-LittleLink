@@ -95,11 +95,8 @@
 /* Base Color Settings
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-    --primary-blue: #1e3a5f;
-    --primary-green: #3EB489;
-    --dark-blue: #0A2342;
-    --light-blue: #3b82f6;
-    --accent-purple: #8b5cf6;
+    --primary-blue: #3b82f6;
+    --dark-blue: #111827;
     --text-light: #f8fafc;
     --text-gray: #cbd5e1;
     --text-dark: #1e293b;
@@ -197,13 +194,13 @@ footer {
 	text-decoration:underline;
 }
 a:hover {
-	color:var(--primary-green);
+	color:var(--primary-blue);
 }
 
 /* Bold text is unique
 -------------------------------------------------- */
 b, strong {
-  color: var(--primary-green);
+  color: var(--primary-blue);
   }
 
 /* Buttons
