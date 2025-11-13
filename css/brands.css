@@ -34,7 +34,7 @@
 /* Default */
 .button.button-default {
 	--button-text:#ffffff;
-	--button-background:var(--primary-blue);
+	--button-background:var(--dark-blue);
 }
 
 /* GitHub */

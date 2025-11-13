@@ -124,17 +124,35 @@
 }
 
 /* Avatar */
-.avatar {
-	width: 8rem;             /* 128px */
-	height: auto;
-	border-radius: 50%;
-	object-fit: cover;
-	background-position: center;
-	margin-bottom: var(--spacing-l);
+/* Logo container - puts logo on a white card */
+.logo-wrap {
+	display: block;
+	max-width: 18rem;              /* cap card width */
+	width: 100%;
+	background: #ffffff;
+	padding: 1rem;                 /* larger card */
+	border-radius: 0.75rem;        /* 12px */
+	box-shadow: 0 10px 30px rgba(2,6,23,0.18);
+	margin: 0 0 var(--spacing-m) 0;
+	text-align: center;
+	box-sizing: border-box;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.logo-wrap .avatar {
 	display: block;
-  }
+	width: 24rem;             /* larger logo inside card */
+	height: auto;
+	object-fit: contain;
+	background-position: center;
+	margin: 0 auto;
+}
+
+@media (max-width:34.375rem) {              /* 550px */
+	.logo-wrap { padding: 0.6rem; max-width: 10rem; }
+	.logo-wrap .avatar { width: 8rem; }
+}
 
 /* Typography Scale */
 h1 {
@@ -222,6 +240,8 @@ b, strong {
 	border-radius:0.5rem;
 	cursor:pointer;
 	box-sizing:border-box;
+	box-shadow: 0 8px 20px rgba(2,6,23,0.18);
+	transition: box-shadow 180ms ease, transform 120ms ease, background-color 120ms ease;
 	hyphens:auto;               	/* Delete this to remove automatic hyphen on line break */
   	margin-bottom:1rem;
 	text-align:center;
@@ -285,8 +305,10 @@ b, strong {
 
 /* Button Text Color Override
     –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .button:hover,button:hover {
+	.button:hover,button:hover {
 	color:var(--button-text);
+	transform: translateY(-3px);
+	box-shadow: 0 14px 34px rgba(2,6,23,0.26);
 }
 
 /* Responsive Typography
